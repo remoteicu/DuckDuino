@@ -42,8 +42,6 @@ git clone https://github.com/remoteicu/DuckDuino.git
 - app.py                 # Python script to start the web server that listens for a request
 - uploads/               # Directory for uploaded files and the PowerShell script
     - run.ps1
-- README.md              # Project documentation
-- LICENSE.md             # License information
 - requirements.txt       # Python package dependencies
 ```
 #### 4. Create a virtual environment (optional but recommended):
