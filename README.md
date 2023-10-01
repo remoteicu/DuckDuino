@@ -26,17 +26,16 @@ This tool allows you to capture a screenshot, gather system information, and sen
 
 ### Python and Required Packages
 
-1. Install Python and pip:
+Install Python and pip:
 
 ```bash
 sudo apt update
 sudo apt install python3
 sudo apt install python3-pip
 ```
+Clone or download this project to your computer.
 
-2. Clone or download this project to your computer.
-
-3. Open a terminal or command prompt and navigate to the project directory.
+Open a terminal or command prompt and navigate to the project directory.
 Directory Structure
 ```bash
 - app.py                 # Python script to start the web server that listens for a request
