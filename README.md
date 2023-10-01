@@ -14,7 +14,7 @@ This tool simulates a Rubber Ducky-like attack by allowing you to capture a scre
 
 ## Prerequisites
 
-- An Arduino device compatible with Ducky Script (e.g., Rubber Ducky).
+- An Arduino device with an ATMEGA32U4 Microcontroller.
 - An internet-connected computer running Windows with PowerShell.
 - Access to a Microsoft Teams channel with a configured incoming webhook.
 - A web server where you can host the PowerShell script.
