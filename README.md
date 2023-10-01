@@ -26,14 +26,13 @@ This tool allows you to capture a screenshot, gather system information, and sen
 
 ### Python and Required Packages
 
-1. Install Python:
+1. Install Python and pip:
 
-   - Download and install Python and pip
-         ```bash
+```bash
          sudo apt update
          sudo apt install python3
          sudo apt install python3-pip
-         ```
+```
 
 2. Clone or download this project to your computer.
 
