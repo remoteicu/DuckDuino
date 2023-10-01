@@ -24,10 +24,8 @@ This tool simulates a Rubber Ducky-like attack by allowing you to capture a scre
 ### Arduino Ducky Script
 
 1. Upload the provided Arduino Ducky Script to your Arduino device using Arduino IDE.
-<div class="note">
-  make sure to select `Arduino Leonardo` under tools > board > boards manager, as well as select the correct COM Port.
-</div>
 
+> **_NOTE:_**  Make sure to select `Arduino Leonardo` under tools > board > boards manager, as well as select the correct COM Port.
 
 ### PowerShell Script
 
