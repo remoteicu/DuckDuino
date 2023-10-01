@@ -30,7 +30,7 @@ This tool simulates a Rubber Ducky-like attack by allowing you to capture a scre
 1. Host the PowerShell script (`run.ps1`) on a web server that is accessible from your computer.
 
 #### Directory Structure on the Web Server
-
+```
 web-server-root/
 │
 ├── scripts/
@@ -38,7 +38,7 @@ web-server-root/
 │
 └── uploads/
     ├──                # This is where uploaded screenshots and data will be stored
-
+```
 
 ## Usage
 
