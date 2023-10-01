@@ -1,4 +1,4 @@
-# Pluggie Victim Information Tool
+# Rubber Ducky-like Attack Simulation Test/Tool
 
 This tool allows you to capture a screenshot, gather system information, and send it to a Microsoft Teams channel using a webhook. It consists of two parts: an Arduino Ducky Script and a PowerShell script.
 
