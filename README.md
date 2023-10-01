@@ -1,6 +1,9 @@
 # Rubber Ducky-like Attack Simulation Test/Tool
 
-This tool simulates a Rubber Ducky-like attack by allowing you to capture a screenshot, gather system information, and send it to a Microsoft Teams channel using a webhook. It consists of two parts: an Arduino Ducky Script and a PowerShell script.
+# Rubber Ducky-like Attack Simulation Test/Tool
+
+This tool allows you to capture a screenshot, gather system information, and send it to a Microsoft Teams channel using a webhook. It consists of two parts: an Arduino Ducky Script and a PowerShell script. It is designed for testing and simulating USB-based attacks, making it a valuable tool for security engineers to evaluate cybersecurity best practices within their organizations.
+
 
 ## Materials
 
