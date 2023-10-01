@@ -24,17 +24,20 @@ This tool allows you to capture a screenshot, gather system information, and sen
   
 ## Installation
 
-### 1. Install Python and pip:
+#### 1. Install Python and pip:
 
 ```bash
 sudo apt update
 sudo apt install python3
 sudo apt install python3-pip
 ```
-### 2. Clone or download this project to your computer.
+#### 2. Clone or download this project to your computer.
+```bash
+git clone https://github.com/remoteicu/DuckDuino
+```
 
-### 3. Open a terminal or command prompt and navigate to the project directory.
-Directory Structure
+#### 3. Open a terminal or command prompt and navigate to the project directory.
+##### Directory Structure
 ```bash
 - app.py                 # Python script to start the web server that listens for a request
 - uploads/               # Directory for uploaded files and the PowerShell script
@@ -43,11 +46,11 @@ Directory Structure
 - LICENSE.md             # License information
 - requirements.txt       # Python package dependencies
 ```
-### 4. Create a virtual environment (optional but recommended):
+#### 4. Create a virtual environment (optional but recommended):
 ```bash
 python -m venv venv
 ```
-### 5. Activate the virtual environment:
+#### 5. Activate the virtual environment:
 On macOS and Linux:
 ```bash
 source venv/bin/activate
@@ -56,7 +59,7 @@ On Windows (PowerShell):
 ```powershell
 .\venv\Scripts\Activate
 ```
-### 6. Install the required Python packages:
+#### 6. Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
