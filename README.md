@@ -33,10 +33,10 @@ sudo apt install python3-pip
 ```
 #### 2. Clone or download this project to your computer.
 ```bash
-git clone https://github.com/remoteicu/DuckDuino
+git clone https://github.com/remoteicu/DuckDuino.git
 ```
 
-#### 3. Open a terminal or command prompt and navigate to the project directory.
+#### 3. Open a terminal and navigate to the project directory.
 ##### Directory Structure
 ```bash
 - app.py                 # Python script to start the web server that listens for a request
