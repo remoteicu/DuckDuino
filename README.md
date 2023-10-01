@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 ### Arduino Script
 
-1. Upload the provided Arduino Script to your Arduino device using Arduino IDE.
+1. Copy the provided [Arduino Script](duino.ino) to your Arduino device using Arduino IDE.
 2. Modify the delays and keypresses in the Script as needed for your setup.
 > **_NOTE:_**  Make sure to select `Arduino Leonardo` under tools > board > boards manager, as well as select the correct COM Port.
 
