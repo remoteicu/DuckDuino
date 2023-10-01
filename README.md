@@ -34,10 +34,10 @@ This tool simulates a Rubber Ducky-like attack by allowing you to capture a scre
 web-server-root/
 │
 ├── scripts/
-│ ├── run.ps1 # The main PowerShell script
+│   ├── run.ps1          # The main PowerShell script
 │
 └── uploads/
-├── # This is where uploaded screenshots and data will be stored
+    ├──                # This is where uploaded screenshots and data will be stored
 
 
 ## Usage
