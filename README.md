@@ -1,6 +1,6 @@
 # Rubber Ducky-like Attack Simulation Test/Tool
 
-This tool allows you to capture a screenshot, gather system information, and send it to a Microsoft Teams channel using a webhook. It consists of two parts: an Arduino Ducky Script and a PowerShell script.
+This tool simulates a Rubber Ducky-like attack by allowing you to capture a screenshot, gather system information, and send it to a Microsoft Teams channel using a webhook. It consists of two parts: an Arduino Ducky Script and a PowerShell script.
 
 ## Prerequisites
 
@@ -18,6 +18,17 @@ This tool allows you to capture a screenshot, gather system information, and sen
 ### PowerShell Script
 
 1. Host the PowerShell script (`run.ps1`) on a web server that is accessible from your computer.
+
+#### Directory Structure on the Web Server
+
+web-server-root/
+│
+├── scripts/
+│ ├── run.ps1 # The main PowerShell script
+│
+└── uploads/
+├── # This is where uploaded screenshots and data will be stored
+
 
 ## Usage
 
@@ -39,6 +50,7 @@ This tool allows you to capture a screenshot, gather system information, and sen
 ### PowerShell Script
 
 - Update the `$teamsWebhookUrl` variable with your Microsoft Teams webhook URL.
+- Update the `$UploadUrl` variable with the URL of the web server where the script is hosted.
 - Adjust any other parameters in the PowerShell script as needed.
 
 ## Troubleshooting
