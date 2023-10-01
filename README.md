@@ -1,9 +1,9 @@
 # Rubber Ducky-like Attack Simulation Test/Tool
 
-# Rubber Ducky-like Attack Simulation Test/Tool
-
 This tool allows you to capture a screenshot, gather system information, and send it to a Microsoft Teams channel using a webhook. It consists of two parts: an Arduino Ducky Script and a PowerShell script. It is designed for testing and simulating USB-based attacks, making it a valuable tool for security engineers to evaluate cybersecurity best practices within their organizations.
 
+> **_NOTE:_** Disclaimer
+    This tool is intended for educational and testing purposes only. It is designed to simulate a USB attack for security engineering and awareness training. Use responsibly and only on systems you are authorized to test.
 
 ## Materials
 
@@ -21,6 +21,60 @@ This tool allows you to capture a screenshot, gather system information, and sen
 - An internet-connected computer running Windows with PowerShell.
 - Access to a Microsoft Teams channel with a configured incoming webhook.
 - A web server where you can host the PowerShell script.
+- 
+## Installation
+
+### Python and Required Packages
+
+1. Install Python:
+
+   - Download and install Python from the [official website](https://www.python.org/downloads/).
+
+2. Clone or download this project to your computer.
+
+3. Open a terminal or command prompt and navigate to the project directory.
+
+4. Create a virtual environment (optional but recommended):
+
+```bash
+python -m venv venv
+```
+Activate the virtual environment:
+
+On macOS and Linux:
+```bash
+source venv/bin/activate
+```
+On Windows (PowerShell):
+```powershell
+.\venv\Scripts\Activate
+```
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Usage
+1. Set up your Arduino with the converted Ducky Script.
+2. Run the Python script app.py:
+```bash
+python app.py
+```
+The script will capture system information, take a screenshot, and send it to the specified Microsoft Teams channel via a webhook.
+
+Note: Make sure to update the $UploadUrl variable in the PowerShell script to point to your server's upload endpoint.
+
+Directory Structure
+bash
+Copy code
+- app.py                 # Python script to capture and send data
+- uploads/               # Directory for uploaded files
+- README.md              # Project documentation
+- LICENSE.md             # License information
+- requirements.txt       # Python package dependencies
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## Setup
 
@@ -29,21 +83,6 @@ This tool allows you to capture a screenshot, gather system information, and sen
 1. Upload the provided Arduino Ducky Script to your Arduino device using Arduino IDE.
 
 > **_NOTE:_**  Make sure to select `Arduino Leonardo` under tools > board > boards manager, as well as select the correct COM Port.
-
-### PowerShell Script
-
-1. Host the PowerShell script (`run.ps1`) on a web server that is accessible from your computer.
-
-#### Directory Structure on the Web Server
-```
-web-server-root/
-│
-├── scripts/
-│   ├── run.ps1          # The main PowerShell script
-│
-└── uploads/
-    ├──                # This is where uploaded screenshots and data will be stored
-```
 
 ## Usage
 
