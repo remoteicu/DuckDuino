@@ -1,6 +1,6 @@
 # Rubber Ducky-like Attack Simulation Test/Tool
 
-This tool allows you to capture a screenshot, gather system information, and send it to a Microsoft Teams channel using a webhook. It consists of two parts: an Arduino Ducky Script and a PowerShell script. It is designed for testing and simulating USB-based attacks, making it a valuable tool for security engineers to evaluate cybersecurity best practices within their organizations.
+This tool allows you to capture a screenshot, gather system information, and send it to a Microsoft Teams channel using a webhook. It consists of two parts: an Arduino Ducky Script and a PowerShell script.
 
 > :warning: **Disclaimer**
     This tool is intended for educational and testing purposes only. It is designed to simulate a USB attack for security engineering and awareness training. Use responsibly and only on systems you are authorized to test.
@@ -21,14 +21,19 @@ This tool allows you to capture a screenshot, gather system information, and sen
 - An internet-connected computer running Windows with PowerShell.
 - Access to a Microsoft Teams channel with a configured incoming webhook.
 - A web server where you can host the PowerShell script.
-- 
+  
 ## Installation
 
 ### Python and Required Packages
 
 1. Install Python:
 
-   - Download and install Python from the [official website](https://www.python.org/downloads/).
+   - Download and install Python and pip
+         ```bash
+         sudo apt update
+         sudo apt install python3
+         sudo apt install python3-pip
+         ```
 
 2. Clone or download this project to your computer.
 
