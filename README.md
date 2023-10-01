@@ -2,6 +2,16 @@
 
 This tool simulates a Rubber Ducky-like attack by allowing you to capture a screenshot, gather system information, and send it to a Microsoft Teams channel using a webhook. It consists of two parts: an Arduino Ducky Script and a PowerShell script.
 
+## Materials
+
+- [HiLetgo BadUsb Beetle Bad USB Microcontroller ATMEGA32U4](https://www.amazon.com/gp/product/B07W5K9YHP/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) (Amazon)
+
+## Software Used
+
+- [Arduino IDE](https://www.arduino.cc/en/guide/linux)
+- [Ducky Script to Arduino Converter](https://elrock.gitlab.io/ducky2arduino/)
+
+
 ## Prerequisites
 
 - An Arduino device compatible with Ducky Script (e.g., Rubber Ducky).
