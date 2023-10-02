@@ -77,7 +77,7 @@ The script will:
    - Upload the screenshot and information to the web server.
    - Send a message with the screenshot link to the specified Microsoft Teams channel using the webhook.
 
-> **_NOTE:_** Make sure to update the `$UploadUrl` and `$teamsWebhookUrl` variables in the PowerShell script to point to your server's upload endpoint.
+> **_NOTE:_** Make sure to update the `$UploadUrl` and `$teamsWebhookUrl` variables in the PowerShell script to point to your server's upload endpoint and your teams webhook url.
   
 ## Usage
 Run app.py:
