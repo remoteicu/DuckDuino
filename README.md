@@ -100,7 +100,7 @@ Install the Cert
     sudo certbot certonly --standalone
 ```
 3. Fill out the prompts with your domain information
-4. Add the following to `app.py`
+4. Add the following to `app.py` and replace {{your-domain}} with your FQDN.
 ```python
 from flask import Flask, request, jsonify, send_from_directory
 import os
@@ -118,7 +118,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=443, ssl_context=('/etc/letsencrypt/live/{{your-domain}}/fullchain.pem', '/etc/letsencrypt/live/{{your-domain}}/privkey.pem'))
 
 ```
-5. Update your arduino script to use the FQDN of your server
+5. Update your arduino script by replacing {{your-domain}} to use the FQDN of your server
 ```bash
 # ...
 
