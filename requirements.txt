@@ -1,4 +1,6 @@
 flask
+flask_sslify
+gunicorn
 pytz
 jsonify
 requests
