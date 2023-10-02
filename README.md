@@ -139,7 +139,6 @@ Stop.sh
 ```bash
 #!/bin/bash
 
-# Find and kill the Flask app process
 pid=$(pgrep -f "python app.py")
 if [ -n "$pid" ]; then
   echo "Stopping Flask app (PID: $pid)..."
