@@ -50,5 +50,5 @@ def api():
     return jsonify({'message': 'Data and image received and stored successfully!', 'image_url': image_url}), 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=443)
+    app.run(host='0.0.0.0', port=5000)
 
