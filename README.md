@@ -84,7 +84,7 @@ Run app.py:
 ```bash
 python app.py
 ```
-## Extra Options
+## Extra Options ( SSl Certificate, Start and Stop scripts )
 1. Point your domain DNS to your remote server IP
 2. Get an ssl certificate from letsencrypt by utalizing [certbot](https://certbot.eff.org/)
 Install Certbot
@@ -147,6 +147,18 @@ if [ -n "$pid" ]; then
 else
   echo "Flask app is not running."
 fi
+```
+8. Make the scripts executible
+```bash
+chmod +x Start.sh
+chmod +x Stop.sh
+```
+9. Run the Start / or Stop
+```bash
+./Start.sh
+```
+```bash
+./Stop.sh
 ```
 
 
